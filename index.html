@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8" />
+		<title>This Calc is broken</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- skrypt do fontawesome -->
+		<script
+			src="https://kit.fontawesome.com/fb74b88678.js"
+			crossorigin="anonymous"
+		></script>
+
+		<link
+			rel="stylesheet"
+			href="style/main.css"
+			type="text/css"
+			media="screen"
+		/>
+	</head>
+	<body>
+		<div class="app-calc hover">
+			<main>
+				<header>
+					<div class="nav-bar">
+						<span class="nav-bar__menu"><i class="fas fa-bars"></i></span>
+						<h2 class="nav-bar__heading">Standardowy</h2>
+						<span class="icon"><i class="fas fa-expand-alt"></i></span>
+						<span class="icon_history"><i class="fas fa-history"></i></span>
+					</div>
+				</header>
+				<div class="result-screen">
+					<p class="second-value"></p>
+					<p class="main-value"></p>
+				</div>
+				<div class="memory-container">
+					<div>MC</div>
+					<div>MR</div>
+					<div class="memo">M+</div>
+					<div class="memo">M-</div>
+					<div class="memo">MS</div>
+					<div>M▾</div>
+				</div>
+				<div class="body-container">
+					<div>%</div>
+					<div>CE</div>
+					<div class="calc reset">c</div>
+					<div class="calc delete">◁</div>
+					<div>¹/x</div>
+					<div>x<sub>2</sub></div>
+					<div>½</div>
+					<div class="operation">/</div>
+					<div class="number__light number">7</div>
+					<div class="number__light number">8</div>
+					<div class="number__light number">9</div>
+					<div class="operation">×</div>
+					<div class="number__light number">4</div>
+					<div class="number__light number">5</div>
+					<div class="number__light number">6</div>
+					<div class="operation">–</div>
+					<div class="number__light number">1</div>
+					<div class="number__light number">2</div>
+					<div class="number__light number">3</div>
+					<div class="operation">+</div>
+					<div class="number__light">+/-</div>
+					<div class="number__light number">0</div>
+					<div class="number__light number dot">.</div>
+					<div class="accent result">=</div>
+				</div>
+			</main>
+		</div>
+		<!-- script -->
+		<script src="js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,172 @@
+/* reset h2 && p */
+h2 {
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+}
+
+p {
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+}
+
+/* global */
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	width: 100%;
+	background-color: #c2c2c2;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+/* calc */
+
+.app-calc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	flex-grow: 1;
+	max-width: 330px;
+	height: max-content;
+	box-shadow: 8px 8px 30px -11px rgba(66, 68, 90, 1);
+	margin-top: 50px;
+}
+
+/* anv-bar */
+
+.nav-bar {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+.fa-bars {
+	padding-left: 10px;
+}
+.nav-bar__heading {
+	font-weight: 500;
+	font-size: 19px;
+}
+
+.nav-bar__menu {
+	padding-right: 15px;
+}
+
+.icon {
+	padding-left: 15px;
+	padding-right: 120px;
+}
+
+/* result - number */
+
+.result-screen {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.second-value {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 10px;
+}
+.main-value {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	font-size: 38px;
+	padding-right: 10px;
+	font-weight: bold;
+}
+
+/* buttons top */
+
+.memory-container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	grid-gap: 2px;
+	cursor: default;
+}
+
+.memory-container > div {
+	font-size: small;
+	font-weight: bold;
+	color: #9c9c9c;
+}
+
+.memory-container > .memo {
+	color: #000;
+}
+
+.memory-container > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #c2c2c2;
+}
+
+/* buttons - body */
+
+.body-container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 79px 79px 79px 79px;
+	grid-gap: 2px;
+	justify-content: center;
+	background-color: #c2c2c2;
+	margin: 5px;
+}
+
+.body-container > div {
+	background-color: #dadada;
+	text-align: center;
+	padding: 10px 5px 10px 5px;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: default;
+	transition: 0.2s ease-out;
+}
+
+.body-container > .accent {
+	background-color: #8492c5;
+}
+
+.body-container > .accent:hover {
+	background-color: #6372aa;
+}
+
+.body-container > .number__light {
+	background-color: #f3f3f3;
+}
+
+.body-container > .number__light:hover {
+	background-color: #c2c2c2;
+}
+
+.body-container > .operation:hover {
+	background-color: #c2c2c2;
+}
